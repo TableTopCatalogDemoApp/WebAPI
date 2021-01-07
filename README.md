@@ -12,6 +12,6 @@ dotnet ef migrations add InitializeDb `
 dotnet ef migrations script `
 	--project .\TableTopCatalogDemoApp.Data\TableTopCatalogDemoApp.Data.csproj `
 	--startup-project .\TableTopCatalogDemoApp.Data.Design\TableTopCatalogDemoApp.Data.Design.csproj `
-    --output database.sql `
-    --idempotent
+	--output database.sql `
+	--idempotent
 ```
