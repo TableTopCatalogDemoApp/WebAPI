@@ -11,7 +11,7 @@ namespace TableTopCatalogDemoApp.Data.Design
         {
             var connectionString = args.Any() ?
                 args[0] :
-                null;
+                TableTopDataContextFactory.DefaultConnectionString;
 
             Console.WriteLine($"Connection string: {connectionString}");
 

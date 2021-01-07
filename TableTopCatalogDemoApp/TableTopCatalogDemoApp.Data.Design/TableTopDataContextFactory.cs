@@ -6,14 +6,14 @@ namespace TableTopCatalogDemoApp.Data.Design
 {
     public class TableTopDataContextFactory : IDesignTimeDbContextFactory<TableTopDataContext>
     {
-        private readonly string _defaultConnectionString =
+        public const string DefaultConnectionString =
             "Server=(localdb)\\mssqllocaldb;Database=TableTopData-Design";
 
         public TableTopDataContext CreateDbContext(string[] args)
         {
             var connectionString = args.Any() ?
-                args[0] ?? _defaultConnectionString :
-                _defaultConnectionString;
+                args[0] ?? DefaultConnectionString :
+                DefaultConnectionString;
 
             var optionsBuilder = new DbContextOptionsBuilder<TableTopDataContext>();
             optionsBuilder.UseSqlServer(connectionString);

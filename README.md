@@ -15,3 +15,10 @@ dotnet ef migrations script `
 	--output database.sql `
 	--idempotent
 ```
+
+## Run data seeding
+```
+dotnet `
+	.\TableTopCatalogDemoApp.Data.Design.dll `
+	"Server=(localdb)\mssqllocaldb;Database=TableTopData"
+```
