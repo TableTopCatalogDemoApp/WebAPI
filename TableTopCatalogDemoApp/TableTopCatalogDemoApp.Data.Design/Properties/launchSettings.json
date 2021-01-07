@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TableTopCatalogDemoApp.Data.Design": {
+      "commandName": "Project",
+      "commandLineArgs": "Server=(localdb)\\mssqllocaldb;Database=TableTopData"
+    }
+  }
+}
